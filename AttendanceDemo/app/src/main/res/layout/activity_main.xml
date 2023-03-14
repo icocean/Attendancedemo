@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_relat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1EEEE"
+    tools:context=".MainActivity">
+
+    <!--<ImageView
+        android:id="@+id/圆满"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/yuanman"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />-->
+    <TextView
+        android:id="@+id/qiandao_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="点击下方签到"/>
+    <ImageView
+        android:id="@+id/qiandao_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/qiandao_tv_text"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/zhijianqiandao"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--<Button
+        android:id="@+id/qiandao_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="144dp"
+        android:text="签到" />-->
+
+    <TextView
+        android:id="@+id/search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qiandao_tv"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:text="查看签到记录"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#444"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

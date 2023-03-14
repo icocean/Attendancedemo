@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/real_relat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFEE"
+    tools:context=".RealNameActivity">
+    <ImageView
+        android:id="@+id/real_tv_shiming"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/web__shimingrenz" />
+    <!--<TextView
+        android:id="@+id/real_tv_shiming_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#444"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:text="实名认证"/>-->
+    <Spinner
+        android:id="@+id/real_tv_xiaoqu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/real_tv_shiming"
+        android:layout_alignLeft="@+id/real_tv_Id"
+        android:padding="15dp" />
+    <Spinner
+        android:id="@+id/real_tv_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/real_tv_xiaoqu"
+        android:layout_alignLeft="@+id/real_tv_Id"
+        android:padding="15dp"
+        />
+    <EditText
+        android:id="@+id/real_tv_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/real_tv_class"
+        android:layout_centerHorizontal="true"
+        android:maxLength="18"
+        android:digits="0123456789xX"
+        android:padding="10dp"
+        android:hint="请输入身份证号码" />
+
+    <TextView
+        android:id="@+id/real_tv_Id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/real_tv_Id"
+        android:layout_alignBottom="@+id/real_tv_Id"
+        android:textSize="16sp"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/real_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/real_tv_Id"
+        android:layout_centerHorizontal="true"
+        android:digits="0123456789"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:hint="请输入手机号码" />
+
+    <TextView
+        android:id="@+id/real_tv_phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/real_tv_phone"
+        android:layout_alignBottom="@+id/real_tv_phone" />
+
+    <Button
+        android:id="@+id/huoqu"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/real_tv_phone"
+        android:layout_centerHorizontal="true"
+        android:text="提交" />
+
+
+</RelativeLayout>

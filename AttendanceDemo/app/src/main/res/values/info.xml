@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="cityArray">
+            <item>选择校区</item>
+            <item>动漫校区</item>
+            <item>高新校区</item>
+            <item>赛博校区</item>
+            <item>会展校区</item>
+        </string-array>
+
+</resources>
